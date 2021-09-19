@@ -20,13 +20,19 @@ const validateObjectId = require('../middleware/validateObjectId')
 
 router.get('/', asyncMiddleware(getAllBlog))
 
-router.get('/:id',validateObjectId, asyncMiddleware(getBlogId))
+router.get('/:id', validateObjectId, asyncMiddleware(getBlogId))
 
 router.post('/', auth, upload.single('image'), asyncMiddleware(createBlog))
 
-router.put('/:id', auth, upload.single('image'), asyncMiddleware(updateBlog))
+router.put(
+  '/:id',
+  auth,
+  upload.single('image'),
+  validateObjectId,
+  asyncMiddleware(updateBlog)
+)
 
-router.delete('/:id', auth, asyncMiddleware(deleteBlog))
+router.delete('/:id', auth, validateObjectId, asyncMiddleware(deleteBlog))
 
 router.get('/blog/pagination', auth, asyncMiddleware(blogPagination))
 
