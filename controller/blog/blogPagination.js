@@ -21,8 +21,8 @@ module.exports = async (req, res) => {
     }
   }
 
-  results.result = await Blog.find().limit(limit).skip(startIndex).exec()
-  if (!results.result)
+  results.data = await Blog.find().limit(limit).skip(startIndex).exec()
+  if (!results.data)
     return res.status(500).json({ message: 'Cannot get result' })
 
   return res.status(200).send(results)
