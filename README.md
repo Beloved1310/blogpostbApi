@@ -16,8 +16,22 @@ This Project is an Application Programming Interface for an blog website. This i
 
 # Installation
 
+- Visit the github respository [github respository link](https://github.com/Beloved1310/blogpostbApi)
 - Clone the api to your Desktop from github.
-- Run 'npm install' to run all dependecies
+
+  > navigate to the **_code_** button on the repository.
+
+  > copy the link and clone using the command _git clone repository url_
+
+  > or using github desktop
+
+  > or download to your local desktop.
+
+- Open the code using any code editor.
+
+- On terminal
+
+  > Run 'npm install' to run all dependecies
 
 # Documentation
 
