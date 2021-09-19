@@ -24,15 +24,9 @@ router.get('/:id', validateObjectId, asyncMiddleware(getBlogId))
 
 router.post('/', auth, upload.single('image'), asyncMiddleware(createBlog))
 
-router.put(
-  '/:id',
-  auth,
-  upload.single('image'),
-  validateObjectId,
-  asyncMiddleware(updateBlog)
-)
+router.put('/:id', auth, upload.single('image'), asyncMiddleware(updateBlog))
 
-router.delete('/:id', auth, validateObjectId, asyncMiddleware(deleteBlog))
+router.delete('/:id', auth, asyncMiddleware(deleteBlog))
 
 router.get('/blog/pagination', auth, asyncMiddleware(blogPagination))
 
