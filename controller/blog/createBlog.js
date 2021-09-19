@@ -1,6 +1,5 @@
 /* eslint no-underscore-dangle: "off" */
 /* eslint camelcase: "off"  */
-
 const Blog = require('../../Model/Blog')
 const User = require('../../Model/User')
 const cloudinary = require('../../utilis/cloudinary')

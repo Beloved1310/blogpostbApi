@@ -9,6 +9,7 @@ const addComment = require('../controller/comment/addComment')
 const getAllComment = require('../controller/comment/getAllComment')
 const getOneComment = require('../controller/comment/getOneComment')
 const deleteComment = require('../controller/comment/deleteComment')
+const updateComment = require('../controller/comment/updateComment')
 
 router.post('/:id', auth, asyncMiddleware(addComment))
 router.get('/:id', auth, asyncMiddleware(getAllComment))
@@ -17,10 +18,8 @@ router.get(
   auth,
   asyncMiddleware(getOneComment)
 )
-router.delete(
-  '/:postId/comments/:commentId/delete',
-  auth,
-  asyncMiddleware(deleteComment)
-)
+router.delete('/:commentId', auth, asyncMiddleware(deleteComment))
+
+router.put('/putcomment/:commentId', auth, asyncMiddleware(updateComment))
 
 module.exports = router
