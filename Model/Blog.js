@@ -26,11 +26,12 @@ const blogSchema = mongoose.Schema(
       fullname: String,
       email: String,
     },
-    comments: [{
-      type: mongoose.Schema.Types.ObjectID,
-      ref: 'Comment'
-    }]
-    
+    comments: [
+      {
+        type: mongoose.Schema.Types.ObjectID,
+        ref: 'Comment',
+      },
+    ],
   },
   { timestamps: true }
 )
