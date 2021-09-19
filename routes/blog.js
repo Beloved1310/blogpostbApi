@@ -20,7 +20,7 @@ const validateObjectId = require('../middleware/validateObjectId')
 
 router.get('/', asyncMiddleware(getAllBlog))
 
-router.get('/:id',validateObjectId, asyncMiddleware(getBlogId))
+router.get('/:id', validateObjectId, asyncMiddleware(getBlogId))
 
 router.post('/', auth, upload.single('image'), asyncMiddleware(createBlog))
 
