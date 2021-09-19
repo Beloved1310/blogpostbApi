@@ -72,7 +72,12 @@ The Project live deployment is [blog post deployment link on heroku](https://blo
 
 # Built-With
 
-The application programming interface is built with Javascript programming language, it's framework ( Node.js )and Mongo database to store information into the database:
+The application programming interface is built with:
+
+- Javascript programming language,
+- it's framework ( Node.js )
+- Node package manager
+- Mongo database to store information into the database.
 
 - Environment Variable Names
   - MONGODBURI : to connect to Mongodb atlas to store data
@@ -82,4 +87,12 @@ The application programming interface is built with Javascript programming langu
   - CLOUDINARY_API_KEY : api key to store images on cloudinary
   - CLOUDINARY_API_SECRET : secret key to store images on cloudinary
 
-# Acknowledgement
+# Comments
+
+This application programming interface can be intergrated to achieve blog website.
+
+# Additions
+
+In addition, User routes is added for registration and authentication of users to make blog posts and comments.
+
+Validation using joi is still being implemented and jest unit and intergration testing for routes. This would be achieve by creating joi schemma to validate user input and writing unit and intergration test.
