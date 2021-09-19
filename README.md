@@ -28,7 +28,7 @@ The major testing done is manual testing using postman technologies and intergra
 
 # Deployment
 
-The Project live deployment is "https://fc-ecommerce-test.herokuapp.com". Use the documentation to know the routes for easy navigation.
+The Project live deployment is "https://blogpostcomment.herokuapp.com/". Use the documentation to know the routes for easy navigation.
 
 # Built-With
 
