@@ -8,7 +8,7 @@ This Project is an Application Programming Interface for a blog website. This in
 
 - Installation
 - Documentation
-- Testig
+- Testing
 - Deployment
 - Tools Used
 - Built-With
