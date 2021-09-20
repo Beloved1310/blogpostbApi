@@ -10,7 +10,6 @@ require('./startup/db')()
 const blog = require('./routes/blog')
 const user = require('./routes/user')
 const comment = require('./routes/comment')
-// require('./production/production')();
 
 process.on('unhandledRejection', (err) => {
   debug(err, 'Unhandled Rejection at Promise')
