@@ -97,4 +97,4 @@ This application programming interface can be intergrated to achieve blog websit
 
 In addition, user routes is added for registration and authentication of users to make blog posts and comments.
 
-Validation using joi is still being implemented and jest unit and intergration testing for routes. This would be achieve by creating joi schemma to validate user input and writing unit and intergration test.
+Validation using joi is still being implemented using jest unit intergration testing for routes. This would be achieve by creating joi schemma to validate user input as well as writing unit and intergration test.
