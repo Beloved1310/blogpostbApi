@@ -2,7 +2,7 @@
 
 # About
 
-This Project is an Application Programming Interface for an blog website. This include routes for blog posts and comments using javascript programming laguages (Node.js framework for server-side programming), which information is stored in database respectively. The purpose of this project is an asssessment test that can help user post blog.
+This Project is an Application Programming Interface for a blog website. This include routes for blog posts and comments using javascript programming laguages (Node.js framework for server-side programming), which information is stored in database respectively. The purpose of this project is an asssessment test that can help user post blog.
 
 # Content
 
@@ -12,12 +12,13 @@ This Project is an Application Programming Interface for an blog website. This i
 - Deployment
 - Tools Used
 - Built-With
-- Acknowledgement
+- Comments
+- Additions
 
 # Installation
 
 - Visit the github respository [github respository link](https://github.com/Beloved1310/blogpostbApi)
-- Clone the api to your Desktop from github.
+- Clone the application programming interface to your Desktop from github.
 
   > navigate to the **_code_** button on the repository.
 
@@ -35,15 +36,15 @@ This Project is an Application Programming Interface for an blog website. This i
 
 # Documentation
 
-The Project is well documented on Postman. The Publication link is [blog post documentation on postman link](https://documenter.getpostman.com/view/15034996/UUxtDqDD)
+The Project is well documented on Postman. The Publication link is [blog post documentation on postman link](https://documenter.getpostman.com/view/15034996/UUxtDqDD). Click the link to view the documentation.
 
 # Testing
 
-The major testing done is manual testing using postman technologies and intergration testing using Jest
+The major testing done is manual testing using postman technologies and intergration testing using Jest.
 
 # Deployment
 
-The Project live deployment is [blog post deployment link on heroku](https://blogpostcomment.herokuapp.com/). Use the documentation to know the routes for easy navigation.
+The Project live deployment is [blog post deployment link on heroku](https://blogpostcomment.herokuapp.com/). Click and use the documentation to know the routes for easy navigation.
 
 # Tools Used
 
@@ -79,7 +80,8 @@ The application programming interface is built with:
 - Node package manager
 - Mongo database to store information into the database.
 
-- Environment Variable Names
+- Environment variable names:
+
   - MONGODBURI : to connect to Mongodb atlas to store data
   - JWT_KEY : to authenticate users
   - debug : to asychronously log statement
@@ -93,6 +95,6 @@ This application programming interface can be intergrated to achieve blog websit
 
 # Additions
 
-In addition, User routes is added for registration and authentication of users to make blog posts and comments.
+In addition, user routes is added for registration and authentication of users to make blog posts and comments.
 
 Validation using joi is still being implemented and jest unit and intergration testing for routes. This would be achieve by creating joi schemma to validate user input and writing unit and intergration test.
