@@ -1,10 +1,5 @@
 /* eslint camelcase: "off" */
 
-// const multer = require('multer');
-// const path = require('path');
-// const router = require('express').Router();
-// const auth = require('../middleware/auth');
-
 const Blog = require('../../Model/Blog')
 const cloudinary = require('../../utilis/cloudinary')
 
